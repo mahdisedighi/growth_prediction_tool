@@ -1,0 +1,60 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.venv/
+env/
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Django-related
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+db.sqlite3
+db.sqlite3-journal
+
+# Migrations (Optional: Keep if you want to track migrations)
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Local development
+instance/
+.env
+*.env
+*.local
+.settings
+.secret_key_store
+
+# Static and media files
+staticfiles/
+media/
+static/
+node_modules/
+
+# VS Code
+.vscode/
+
+# JetBrains (PyCharm, etc.)
+.idea/
+*.iml
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Windows Thumbnails
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+__pycache__/
+.venv/

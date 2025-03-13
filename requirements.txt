@@ -1,0 +1,17 @@
+asgiref
+dataclasses
+Django
+django-cors-headers
+djangorestframework
+djangorestframework_simplejwt
+djongo
+dnspython
+joblib
+numpy
+PyJWT
+scikit-learn
+scipy
+sqlparse
+threadpoolctl
+typing_extensions
+tzdata
