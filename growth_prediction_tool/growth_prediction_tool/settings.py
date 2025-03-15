@@ -79,13 +79,11 @@ WSGI_APPLICATION = 'growth_prediction_tool.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
+        'NAME': 'growth',
         'ENFORCE_SCHEMA': False,
         'CLIENT': {
-            'name': 'growth',
-            'host': 'mongodb://vatche:<db_password>@cluster0.vs028.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
-            "username": "vatche",
-            "password": "tmboozik",
-            "authMechanism": "SCRAM-SHA-1",
+            'host': "mongodb+srv://vatche:tmboozik@cluster0.vs028.mongodb.net/"
+        "?retryWrites=true&w=majority&appName=Cluster0",
         }
     }
 }
@@ -138,3 +136,10 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
 }
+
+
+
+
+
+
+

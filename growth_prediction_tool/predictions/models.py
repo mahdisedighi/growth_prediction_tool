@@ -9,8 +9,14 @@ class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     data = models.JSONField(default=dict, help_text="Stores arbitrary user profile data as JSON")
 
+    class Meta:
+        db_table = "users"
+
+
     def __str__(self):
         return f"Profile of {self.user.username}"
+
+
 
 class Prediction(models.Model):
     """
@@ -35,6 +41,9 @@ class Prediction(models.Model):
     )
     insights = models.JSONField(help_text="List of market insights as JSON")
     created_at = models.DateTimeField(auto_now_add=True, help_text="Timestamp of prediction creation")
+
+    class Meta:
+        db_table = "growth"
 
     def __str__(self):
         return f"Prediction for {self.user.username} at {self.created_at}"
